@@ -117,7 +117,7 @@ textarea {
   .address,
   .contactUs {
     padding: 0 60px;
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     align-items: center;
     justify-content: center;
   }
