@@ -29,7 +29,7 @@ const Navbar = () => {
       case "home":
         return <Home setSelectedTab={setSelectedTab} />;
       case "about":
-        return <Address />;
+        return <Address isMobile={isMobile} isTablet={isTablet} />;
       case "contact":
         return <Contact />;
       default:

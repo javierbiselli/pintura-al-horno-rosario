@@ -1,5 +1,5 @@
 .home,
-.address,
+.address-container,
 .contactUs {
   text-align: center;
   position: relative;
@@ -22,6 +22,12 @@
 .address p {
   font-weight: 400;
   font-size: 1.1rem;
+  margin: 3px;
+}
+
+.address a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .contact-text {
@@ -34,6 +40,7 @@
   margin: 0 auto;
   padding: 30px;
   animation: fade-in 0.5s ease-out;
+  max-width: 800px;
 }
 
 .form-group {
@@ -83,6 +90,27 @@ textarea {
     opacity: 1;
   }
 }
+.address-text {
+  text-align: start;
+  padding: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.address-text p {
+  margin: 10px;
+}
+
+.iframe {
+  width: 95vw;
+  height: 450px;
+  border: 0;
+  margin-top: 40px;
+}
+
+i {
+  color: rgb(22, 22, 22);
+}
 
 @keyframes slide-in {
   from {
@@ -110,15 +138,38 @@ textarea {
 
 @media only screen and (min-width: 1201px) {
   .form {
-    width: 60%;
+    width: 100%;
   }
 
   .home,
-  .address,
+  .address-container,
   .contactUs {
     padding: 0 60px;
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     align-items: center;
     justify-content: center;
+  }
+
+  .contactUs {
+    padding: 0 30px;
+    min-height: 600px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .address-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .iframe {
+    width: 50vw;
+  }
+
+  .address-container {
+    flex-direction: row;
+  }
+
+  .address {
+    margin-right: 30px;
   }
 }
